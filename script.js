@@ -56,7 +56,7 @@ const codeQuestions = [
       
         var currentQuestionIndex = 0;
         var timer;
-        var secondsLeft = 40; // Adjust this based on your desired time limit
+        var secondsLeft = 60; // Adjust this based on your desired time limit
         var score = 0;
       
         startButton.addEventListener("click", startQuiz);
@@ -102,8 +102,8 @@ const codeQuestions = [
             feedbackElement.textContent = "Correct!";
             score++;
           } else {
-            feedbackElement.textContent = "Incorrect! -5 seconds";
-            secondsLeft -= 5;
+            feedbackElement.textContent = "Incorrect! -10 seconds";
+            secondsLeft -= 10;
           }
       
           feedbackElement.classList.remove("hide");
