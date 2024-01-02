@@ -1,12 +1,11 @@
 
+var startButton = document.getElementById("start");
 
 
 
-
-
-
-
-var count = 15;
+startButton.addEventListener("click", function() {
+    // Your code to be executed when the button is clicked
+    var count = 30;
 var timer = setInterval(function() {
   console.log(count);
   count--;
@@ -19,3 +18,8 @@ var stopInterval = function() {
   console.log('time is up!');
   clearInterval(timer);
 }
+});
+
+
+
+
